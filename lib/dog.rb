@@ -96,7 +96,8 @@ class Dog
   end
 
   # '.find_by_name' finds if that name exists and
-  # returns arrays of rows containing that name.
+  # returns instance objects of the rows with the
+  # similar name.
   def self.find_by_name(name)
     sql = <<-SQL
       SELECT * FROM dogs
