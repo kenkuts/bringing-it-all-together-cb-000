@@ -15,6 +15,7 @@ class Dog
   # This creates our SQL table with 3 columns
   # id increments as soon as we insert a row inside the table
   # name will be mapped with our name attribute in our dog object
+  # breed will be mapped with our name attribute in our dog object
   def self.create_table
     sql = <<-SQL
       CREATE TABLE IF NOT EXISTS dogs (
