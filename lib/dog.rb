@@ -118,7 +118,9 @@ class Dog
     DB[:conn].execute(sql, self.name, self.breed, self.id)
   end
 
-  # '.find_by_id'
+  # '.find_by_id' similar to the '.find_by_name' method
+  # instead this uses the id attribute to find a specific
+  # row. This method will return an instance of that table.
   def self.find_by_id(id)
     sql = <<-SQL
       SELECT * FROM dogs
