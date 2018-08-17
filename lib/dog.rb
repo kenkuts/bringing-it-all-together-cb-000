@@ -89,12 +89,14 @@ class Dog
   end
 
   # '.new_from_db' is a helper method that takes an
-  # array equivalent to values in a table's row and
+  # array, equivalent to values in a table's row, and
   # creates object instances from that array.
   def self.new_from_db(row)
     self.new(id: row[0], name: row[1], breed: row[2])
   end
 
+  # '.find_by_name' finds if that name exists and
+  # returns arrays of rows containing that name.
   def self.find_by_name(name)
     sql = <<-SQL
       SELECT * FROM dogs
