@@ -61,6 +61,8 @@ class Dog
   # in both the name and breed from our dogs
   # table this method will create an object instance and
   # save the data inside our table and return that obj instance.
+  # If they do exist the method just creates and instance of that
+  # row and returns it. 
   def self.find_or_create_by(name:, breed:)
     sql = <<-SQL
       SELECT * FROM dogs
