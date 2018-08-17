@@ -13,6 +13,7 @@ class Dog
   end
 
   # This creates our SQL table with 3 columns
+  # id increments as soon as we insert a row inside the table
   def self.create_table
     sql = <<-SQL
       CREATE TABLE IF NOT EXISTS dogs (
