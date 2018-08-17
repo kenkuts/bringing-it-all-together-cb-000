@@ -104,7 +104,9 @@ class Dog
       WHERE name = ?;
     SQL
 
-    self.new_from_db(DB[:conn].execute(sql, name).flatten)
+    data = DB[:conn].execute(sql, name).flatten
+
+    
   end
 
   # '.update' just updates the table if the values inside
