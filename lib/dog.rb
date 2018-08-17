@@ -38,7 +38,9 @@ class Dog
   end
 
   # The '.save' method basically saves our object instance
-  # into our
+  # into our dogs table. If however the id of the instance
+  # thats using the method exists it updates itself instead
+  # of saving itself.
   def save
     if self.id != nil
       self.update
