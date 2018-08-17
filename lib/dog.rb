@@ -118,6 +118,7 @@ class Dog
     DB[:conn].execute(sql, self.name, self.breed, self.id)
   end
 
+  # '.find_by_id'
   def self.find_by_id(id)
     sql = <<-SQL
       SELECT * FROM dogs
