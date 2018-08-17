@@ -3,6 +3,9 @@ require 'pry'
 class Dog
   attr_accessor :id, :name, :breed
 
+  # We are passing our initial values using the keyword argument
+  # its basicall like passing a hash as a parameter but it's better
+  # cause it specifies which value belongs to which key.
   def initialize(id: nil, name:, breed:)
     self.id = id
     self.name = name
