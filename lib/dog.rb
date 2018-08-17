@@ -60,7 +60,7 @@ class Dog
   # our passed arguments. If arguments don't exist
   # in both the name and breed from our dogs
   # table this method will create an object instance and
-  # save those attributes inside our table an return that instance.
+  # save the data inside our table an return that instance.
   def self.find_or_create_by(name:, breed:)
     sql = <<-SQL
       SELECT * FROM dogs
