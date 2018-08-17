@@ -58,8 +58,9 @@ class Dog
 
   # The '.find_or_create_by' method finds or creates
   # our passed arguments. If arguments don't exist
-  # in both the name and breed fields from our dogs
-  # table this method will create
+  # in both the name and breed from our dogs
+  # table this method will create the object and save
+  # those attributes inside our
   def self.find_or_create_by(name:, breed:)
     sql = <<-SQL
       SELECT * FROM dogs
