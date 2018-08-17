@@ -3,7 +3,7 @@ require 'pry'
 class Dog
   attr_accessor :id, :name, :breed
 
-  def initialize(id: nil, name:, breed: )
+  def initialize(id: nil, name:, breed:)
     self.id = id
     self.name = name
     self.breed = breed
