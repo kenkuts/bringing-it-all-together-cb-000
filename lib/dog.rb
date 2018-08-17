@@ -37,7 +37,8 @@ class Dog
     DB[:conn].execute(sql)
   end
 
-  # The '.save'
+  # The '.save' method basically saves our object instance
+  # into our
   def save
     if self.id != nil
       self.update
