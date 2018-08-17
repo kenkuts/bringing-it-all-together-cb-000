@@ -12,6 +12,7 @@ class Dog
     self.breed = breed
   end
 
+  # This creates our SQL table with 3 columns
   def self.create_table
     sql = <<-SQL
       CREATE TABLE IF NOT EXISTS dogs (
