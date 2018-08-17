@@ -28,6 +28,7 @@ class Dog
     DB[:conn].execute(sql)
   end
 
+  # This delets our table
   def self.drop_table
     sql = <<-SQL
       DROP TABLE dogs;
