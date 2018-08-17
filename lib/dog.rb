@@ -106,6 +106,7 @@ class Dog
     self.new_from_db(DB[:conn].execute(sql, name).flatten)
   end
 
+  # '.update'
   def update
     sql = <<-SQL
       UPDATE dogs
