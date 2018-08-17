@@ -37,6 +37,7 @@ class Dog
     DB[:conn].execute(sql)
   end
 
+  # The '.save'
   def save
     if self.id != nil
       self.update
