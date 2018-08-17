@@ -106,7 +106,8 @@ class Dog
     self.new_from_db(DB[:conn].execute(sql, name).flatten)
   end
 
-  # '.update'
+  # '.update' just updates the table if the values inside 
+  # an instance object is changed.
   def update
     sql = <<-SQL
       UPDATE dogs
