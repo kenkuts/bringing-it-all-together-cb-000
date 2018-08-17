@@ -108,6 +108,8 @@ class Dog
 
     data.map do |row|
       self.new_from_db(row)
+    end
+    
   end
 
   # '.update' just updates the table if the values inside
