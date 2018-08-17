@@ -106,7 +106,7 @@ class Dog
 
     data = DB[:conn].execute(sql, name).flatten
 
-    
+    data.map
   end
 
   # '.update' just updates the table if the values inside
